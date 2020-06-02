@@ -7,6 +7,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      @media only screen and (min-width: 1200px){
+        .res {
+          margin-left: 300px;
+        }
+      }
+    </style>
 
     <title>WeatherApp</title>
     
@@ -48,10 +55,11 @@
           </div>
 
         </div>
+      
 
         {% if code==200 %}
 
-        <div class="container bg-success p-2" style="max-width: 550px;margin-left: 300px; margin-top: 10px;">
+        <div class="container bg-success p-2 res" style="max-width: 550px; margin-top: 10px;">
           <div class="row">
             <div class="col-sm-9">
               <h2>{{ city }}, {{ country }}</h2>
